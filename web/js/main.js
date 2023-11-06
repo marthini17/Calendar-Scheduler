@@ -190,7 +190,7 @@ function show_events(events, month, day) {
         // Go through and add each event as a card to the events container
         for(var i=0; i<events.length; i++) {
             var event_card = $("<div class='event-card'></div>");
-            var event_name = $("<div class='event-name'>"+events[i]["occasion"]+":</div>");
+            var event_name = $("<div class='event-name'>"+events[i]["occasion"]+"</div>");
             var event_count = $("<div class='event-count'>"+events[i]["invited_count"]+" Invited</div>");
             if(events[i]["cancelled"]===true) {
                 $(event_card).css({
@@ -198,7 +198,8 @@ function show_events(events, month, day) {
                 });
                 event_count = $("<div class='event-cancelled'>Cancelled</div>");
             }
-            $(event_card).append(event_name).append(event_count);
+            $(event_card).append(event_name);
+//                    .append(event_count);
             $(".events-container").append(event_card);
         }
     }

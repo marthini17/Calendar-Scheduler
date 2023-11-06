@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Calendar 04</title>
+  	<title>Calendar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,11 +13,13 @@
 
 	</head>
 	<body>
+            
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Calendar #04</h2>
+					<h2 class="heading-section">Calendar</h2>
+                                      
 				</div>
 			</div>
 			<div class="row">
@@ -71,12 +73,12 @@
 				    </div>
 				    <div class="dialog" id="dialog">
 				        <h2 class="dialog-header"> Add New Event </h2>
-				        <form class="form" id="form">
+                                        <form class="form" id="form" action="newjsp.jsp" >
 				          <div class="form-container" align="center">
 				            <label class="form-label" id="valueFromMyButton" for="name">Event name</label>
-				            <input class="input" type="text" id="name" maxlength="36">
-				            <label class="form-label" id="valueFromMyButton" for="count">Number of people to invite</label>
-				            <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
+				            <input class="input" type="text" id="name" name="email" maxlength="36">
+				            <label class="form-label" id="valueFromMyButton" for="count">Time</label>
+				            <input class="input" type="text" name="password"id="count" min="0" max="1000000" maxlength="7">
 				            <input type="button" value="Cancel" class="button" id="cancel-button">
 				            <input type="button" value="OK" class="button button-white" id="ok-button">
 				          </div>
@@ -87,12 +89,11 @@
 			</div>
 		</div>
 	</section>
-
 	<script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-
+ 
 	</body>
 </html>
 
